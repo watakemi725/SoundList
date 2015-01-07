@@ -30,7 +30,6 @@
     // 0~20までランダムに数字を生成する。
     
     
-    
     AudioServicesPlaySystemSound(sound_1);
     actionNumber=arc4random() % 60 + 1;[
     label.text=[NSString stringWithFormat:@"%d", actionNumber];
