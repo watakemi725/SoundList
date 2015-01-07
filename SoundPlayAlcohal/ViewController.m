@@ -18,9 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
-  
-    
+
 }
 
 -(IBAction)boom {
@@ -30,6 +28,9 @@
         AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound_2);
     }
     // 0~20までランダムに数字を生成する。
+    
+    
+    
     AudioServicesPlaySystemSound(sound_1);
     actionNumber=arc4random() % 60 + 1;[
     label.text=[NSString stringWithFormat:@"%d", actionNumber];
