@@ -11,8 +11,12 @@
 
 @interface ViewController : UIViewController
 {
-    SystemSoundID testSound01;
+    AVAudioPlayer *test01;
+    
+    
 }
+@property AVAudioPlayer *guitar_soundA;
+//@property soundid *guitar_soundA;
 
 
 -(IBAction)play;

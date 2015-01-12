@@ -18,35 +18,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    NSString *pathA = [[NSBundle mainBundle] pathForResource:@"sos" ofType:@"m4a"];
+    NSURL *url = [NSURL fileURLWithPath:pathA];
+
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, & self.guitar_soundA);
+//    AudioServicesPlaySystemSound(self.guitar_soundA);
+    
+    self.guitar_soundA = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:NULL];
 
 }
 
 -(IBAction)boom {
-    { // 音楽ファイルの読み込み
-        NSString *path=[[NSBundle mainBundle] pathForResource:@"seikai" ofType:@"mp3"];
-        NSURL *url=[NSURL fileURLWithPath:path];
-        AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(url), &sound_2);
-    }
-    // 0~20までランダムに数字を生成する。
-    
-    
-    AudioServicesPlaySystemSound(sound_1);
-    actionNumber=arc4random() % 60 + 1;[
-    label.text=[NSString stringWithFormat:@"%d", actionNumber];
-    
-    //　ランダムの配列
-    if (actionNumber == 1) {
-        label.text=questionArray[0];
-        label.textColor=[UIColor redColor];
-        //音楽ファイルの再生
-        AudioServicesPlaySystemSound(testSound02);
-    }
-    else {
-        label.text=@"それ以外";
-        label.textColor=[UIColor darkGrayColor];
-    }
+    [self.guitar_soundA play];
 }
-
+-(IBAction)stop{
+    [self.guitar_soundA pause];
+}
 
 
 

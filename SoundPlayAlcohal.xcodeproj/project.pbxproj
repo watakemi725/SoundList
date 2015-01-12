@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46D1A2011A5FE8FD00E752EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F1B5831A597C5F00739FBE /* ViewController.m */; };
+		46D1A2031A5FE99600E752EA /* sos.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 46D1A2021A5FE99600E752EA /* sos.m4a */; };
 		46F1B57E1A597C5F00739FBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F1B57D1A597C5F00739FBE /* main.m */; };
 		46F1B5811A597C5F00739FBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F1B5801A597C5F00739FBE /* AppDelegate.m */; };
 		46F1B5841A597C5F00739FBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F1B5831A597C5F00739FBE /* ViewController.m */; };
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46D1A2021A5FE99600E752EA /* sos.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sos.m4a; sourceTree = "<group>"; };
 		46F1B5781A597C5F00739FBE /* SoundPlayAlcohal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundPlayAlcohal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F1B57C1A597C5F00739FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46F1B57D1A597C5F00739FBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				46F1B57F1A597C5F00739FBE /* AppDelegate.h */,
+				46D1A2021A5FE99600E752EA /* sos.m4a */,
 				46F1B5801A597C5F00739FBE /* AppDelegate.m */,
 				46F1B5821A597C5F00739FBE /* ViewController.h */,
 				46F1B5831A597C5F00739FBE /* ViewController.m */,
@@ -204,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D1A2031A5FE99600E752EA /* sos.m4a in Resources */,
 				46F1B5871A597C5F00739FBE /* Main.storyboard in Resources */,
 				46F1B58C1A597C6000739FBE /* LaunchScreen.xib in Resources */,
 				46F1B5891A597C5F00739FBE /* Images.xcassets in Resources */,
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D1A2011A5FE8FD00E752EA /* ViewController.m in Sources */,
 				46F1B5981A597C6000739FBE /* SoundPlayAlcohalTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +379,6 @@
 		46F1B59F1A597C6000739FBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -392,7 +397,6 @@
 		46F1B5A01A597C6000739FBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -423,6 +427,7 @@
 				46F1B59D1A597C6000739FBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46F1B59E1A597C6000739FBE /* Build configuration list for PBXNativeTarget "SoundPlayAlcohalTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				46F1B5A01A597C6000739FBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
